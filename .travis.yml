@@ -10,4 +10,4 @@ before_install:
 script:
   - make test VERSION=$BUILD_VERSION
 after_success:
-  - make tag VERSION=$BUILD_VERSION AUTH=$BUILD_KEY
+  - make tag VERSION=$BUILD_VERSION GH_TOKEN=$BUILD_KEY
