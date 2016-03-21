@@ -3,6 +3,9 @@ env:
     - BUILD_VERSION=0.1.$TRAVIS_BUILD_NUMBER
     - secure: wYgPK4ksBtLzAsu/xy4HnybsdiqLlg9wssF34dumMbXzd+50ynEI3QiF15aFqW2crn5lVUkTpRLqCxAQEE+BXepLHzHOWMX5M39+VpCCwVX6PvNuvI6J7WgRbet6WLKknPBMiM+Egj7rwPNiow1DOCuAiFirPXfx+uwUX0/vBlGELlWjWC1ZAp4/dkvtvf4+uxW4mX1yAnehJYc+aGjQerslw3Wc4v4ncU6WequlejKnfhDs7EXbKqbJOBKuyVnkHRLiPWgp/dtBdBZUfx3wJ4+/+5gcpVMYsix6LvaeIivoHIyTK8zfoMCzRHjOi6lJipHZeNTNEZBMz+h6rJMt5W6IVdoe2PbEsckEkaKganXC2LaLJRU+T/+M9m45jc4lxtq35eMSUY7tE5H7/u0f4TL6ng5Vl0f7/w99L6bCr9346rLoiDtOEfYcXT8O6uAGXe6WplLWNmDeo5YrXgBbEcXlxuBO0Kv2nl/LbIoIocDWVA2gd132Hf3WjZ7/CghZiN0MR+Dcsp5FfpRPGIW+hnkBJ5bbAb3bIol7gfBEZ2RO+8j4UnUe/HLruDGRgV2N37JG33k4L7P46kp8P5gf/uU3WLVJbQW1TBVYmkWAFc6c9rP0PMsYhYtJgpcM2gohJ3w7adjpPIk7DxqR2Q71rqxsSsG4qwzVioyw8O1FW3Q=
 sudo: false
+branches:
+  except:
+    - /^*-v[0-9]/
 services:
   - docker
 before_install:
