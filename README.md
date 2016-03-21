@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/rowancarr/docker-fpm.svg?branch=master)](https://travis-ci.org/rowancarr/docker-fpm)
 # docker-fpm
 Used to build packages as described at the fpm website
 
