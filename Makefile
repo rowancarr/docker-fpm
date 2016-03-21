@@ -7,7 +7,7 @@ build:
 	docker build -t ${REGISTRY}/${IDENTIFIER}:${VERSION} .
 
 test:
-	docker run --rm -i ${REGISTRY}/${IDENTIFIER}:${VERSION} sh -c 'which fpm || echo "[FAIL] - fpm not installed" && echo "[PASS] - fpm installed"'
+	docker run --rm --entrypoint sh -i ${REGISTRY}/${IDENTIFIER}:${VERSION} -c 'which fpm || echo "[FAIL] - fpm not installed" && echo "[PASS] - fpm installed"'
 
 deploy:
 	docker tag -f ${REGISTRY}/${IDENTIFIER}:${VERSION} ${REGISTRY}/${IDENTIFIER}:latest
